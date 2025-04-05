@@ -13,13 +13,13 @@ public class SmartTv {
 
     public void aumentarVolume(){
         this.volume++;
-        System.out.println("Volume atual?: " + smarttv.volume);
+        System.out.println("Volume atual?: " + this.volume);
 
     }
 
     public void diminuirVolume(){
         this.volume--;
-        System.out.println("Volume atual?: " + smarttv.volume);
+        System.out.println("Volume atual?: " + this.volume);
     }
 
     public void aumentarCanal(){
