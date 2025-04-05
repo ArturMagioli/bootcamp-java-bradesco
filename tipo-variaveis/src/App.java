@@ -7,5 +7,16 @@ public class App {
         short numeroCurto = 1;
         int numeroNormal = numeroCurto; //funciona
         numeroCurto = (short) numeroNormal; //Erro. Necessita de uma casting (short)
+
+        //variaveis vs constantes:
+
+        int numero = 5;
+        numero = 10;
+
+        System.out.println(numero);
+
+        final double VALOR_DE_PI = 3.14;
+
+        System.out.println(VALOR_DE_PI);
     }
 }
