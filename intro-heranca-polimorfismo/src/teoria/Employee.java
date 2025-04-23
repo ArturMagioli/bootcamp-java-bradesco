@@ -1,3 +1,4 @@
+package teoria;
 /**
  * Para não bloquear a possibilidade de estender a classe e ainda assim estendê-la para outras classes
  * utilize o modificador 'sealed + permits Class1...' na classse e 'non-sealed' nas classes que podem estendê-la.

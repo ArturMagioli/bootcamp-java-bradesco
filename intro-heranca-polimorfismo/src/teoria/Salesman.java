@@ -1,3 +1,4 @@
+package teoria;
 /**
  * 'final' impede da classe de ser estendida
  * obs: cada classe só pode conter um modificador: sealed, non-sealed e final

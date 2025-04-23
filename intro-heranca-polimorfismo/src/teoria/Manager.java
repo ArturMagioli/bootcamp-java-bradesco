@@ -1,3 +1,4 @@
+package teoria;
 public non-sealed class Manager extends Employee{
     
     private String login;
