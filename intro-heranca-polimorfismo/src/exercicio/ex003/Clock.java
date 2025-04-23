@@ -2,17 +2,20 @@ package exercicio.ex003;
 
 public abstract class Clock {
 
-    private int hour;
+    protected int hour;
 
-    private int minute;
+    protected int minute;
 
-    private int second;
+    protected int second;
 
     public Clock() {
 
     }
 
-    public Clock(int hour, int minute, int second) {
+    public Clock(int hour, int minute, int second) throws TimeFormatterException {
+        if (!isValidTime(hour, minute, second))
+            throw new TimeFormatterException("Os dados colocados são inválidos!");
+
         this.hour = hour;
         this.minute = minute;
         this.second = second;
@@ -22,7 +25,9 @@ public abstract class Clock {
         return hour;
     }
 
-    public void setHour(int hour) {
+    public void setHour(int hour) throws TimeFormatterException {
+        if (!isValidHour(hour)) 
+            throw new TimeFormatterException("Hora inválida!");
         this.hour = hour;
     }
 
@@ -30,7 +35,9 @@ public abstract class Clock {
         return minute;
     }
 
-    public void setMinute(int minute) {
+    public void setMinute(int minute) throws TimeFormatterException {
+        if (!isValidMinute(minute))
+            throw new TimeFormatterException("Minuto inválido!");
         this.minute = minute;
     }
 
@@ -38,10 +45,15 @@ public abstract class Clock {
         return second;
     }
 
-    public void setSecond(int second) {
+    public void setSecond(int second) throws TimeFormatterException {
+        if (!isValidSecond(second))
+            throw new TimeFormatterException("Segundo inválido!");
         this.second = second;
     }
 
     public abstract String getTime();
-
+    protected abstract boolean isValidTime(int hour, int minute, int second);
+    protected abstract boolean isValidHour(int hour);
+    protected abstract boolean isValidMinute(int minute);
+    protected abstract boolean isValidSecond(int second);
 }
