@@ -1,4 +1,4 @@
-package teoria;
+package teoria.interfaces;
 
 public class Computer implements VideoPlayer, MusicPlayer{
     

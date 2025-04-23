@@ -1,4 +1,4 @@
-package teoria;
+package teoria.interfaces;
 
 //interfaces podem realizar herança entre elas: 
 public interface VideoPlayer /*extends MusicPlayer*/{

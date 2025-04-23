@@ -1,4 +1,4 @@
-package teoria;
+package teoria.interfaces;
 
 /**
  * Records não conseguem receber herança, mas conseguem implementar interfaces
