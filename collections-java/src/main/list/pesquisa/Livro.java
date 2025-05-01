@@ -1,4 +1,4 @@
-package main.list.operacoesbasicas;
+package main.list.pesquisa;
 
 public class Livro {
 
