@@ -6,7 +6,7 @@ import java.util.Set;
 public class ConjuntoConvidados {
     /*
      * Set não pode conter dados repetidos. Necessário algum dado distinto
-     * Suas operações de add e remove não possuem variantes para aceitar collections
+     * Suas operações de add e remove não possuem variantes para aceitar collections(indeciso)
      */
     private Set<Convidado> convidadosSet;
 
@@ -14,9 +14,7 @@ public class ConjuntoConvidados {
         this.convidadosSet = new HashSet<>();
     }
 
-    /**
-     * Set não possui método de addAll
-     */
+
     public void adicionarConvidado(String nome, int codigoConvite) {
         convidadosSet.add(new Convidado(nome, codigoConvite));
     }
